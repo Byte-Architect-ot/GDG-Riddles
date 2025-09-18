@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leaderboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #fff;
+    }
+    th, td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    th {
+      background-color: #007BFF;
+      color: white;
+    }
+    tr:hover {
+      background-color: #f1f1f1;
+    }
+  </style>
+</head>
+<body>
+  <h1>Leaderboard</h1>
+  <table id="leaderboard">
+    <thead>
+      <tr>
+        <th>Display Name</th>
+        <th>Score</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Leaderboard rows will appear here -->
+    </tbody>
+  </table>
+
+  <script>
+    async function fetchLeaderboard() {
+      try {
+        const response = await fetch('http://localhost:4000/api/leaderboard');
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        const data = await response.json();
+        const tbody = document.querySelector('#leaderboard tbody');
+        tbody.innerHTML = ''; // Clear previous rows
+
+        // Assuming each entry has 'displayName' and 'score'
+        data.forEach(user => {
+          const row = document.createElement('tr');
+
+          const nameCell = document.createElement('td');
+          nameCell.textContent = user.displayName;
+          row.appendChild(nameCell);
+
+          const scoreCell = document.createElement('td');
+          scoreCell.textContent = user.score;
+          row.appendChild(scoreCell);
+
+          tbody.appendChild(row);
+        });
+
+      } catch (error) {
+        console.error('Error fetching leaderboard:', error);
+      }
+    }
+
+    // Fetch leaderboard on page load
+    window.onload = fetchLeaderboard;
+  </script>
+</body>
+</html>
