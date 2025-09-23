@@ -196,12 +196,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
             feedbackElement.textContent = `Correct! +${100 + timeBonus} points`;
             feedbackElement.classList.remove('hidden');
-            feedbackElement.style.color = "#02922dff";
+            feedbackElement.style.color = "#bdf9cfff";
             createConfetti();
         } else {
             feedbackElement.innerHTML = `Incorrect! <br> The correct answer is: ${currentQuestion.options[correctIndex]}`;
             feedbackElement.classList.remove('hidden');
-            feedbackElement.style.color = "#fe3232ff";
+            feedbackElement.style.color = "#ffd4d4ff";
         }
 
         nextBtn.classList.remove('hidden');
