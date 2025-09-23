@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             question: "Which language is used to make web pages interactive?",
             options: ["CSS", "HTML", "JavaScript", "PHP"],
-            answer: 2
+            answer: 3
         },
         {
             question: "What is the purpose of a database in web development?",
