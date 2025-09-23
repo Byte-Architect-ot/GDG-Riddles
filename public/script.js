@@ -37,59 +37,73 @@ document.addEventListener('DOMContentLoaded', () => {
     let leaderboard = [];
 
     // Quiz questions
-    const questions = [
-        {
-            question: "Which programming language is used to build Flutter apps?",
-            options: ["Swift", "Dart", "Kotlin", "Java"],
-            answer: 2
-        },
-        {
-            question: "Which of the following platforms is NOT directly supported by Flutter?",
-            options: ["Android", "iOS", "Web", "MainFrame"],
-            answer: 4
-        },
-        {
-            question: "What does “Cross-Platform Compatibility” mean in Flutter?",
-            options: ["Apps can run on multiple platforms with the same code"," Apps require different code for each platform"," Apps only run on Android and iOS", " Apps cannot run on desktop platforms"],
-            answer: 1
-        },
-        
-        {
-            question: "Name two types of applications: Mobile Apps and _____ ",
-            options: ["Games", "Website", "Desktop Apps", "Wallpapers"],
-            answer: 3
-        },
-        {
-            question: "What is 'Hot Reload' in Flutter?",
-            options: ["A feature to auto-update UI without restarting the app", "A tool for app publishing", "A way to compile Dart into Java", "A method to increase battery usage"],
-            answer: 1
-        },
-        {
-            question: "Which language is used to make web pages interactive?",
-            options: ["CSS", "HTML", "JavaScript", "PHP"],
-            answer: 3
-        },
-        {
-            question: "What is the purpose of a database in web development?",
-            options: [" To design web pages", "To store and manage data", " To create animations", " To write CSS"],
-            answer: 2
-        },
-        {
-            question: "Which of the following is a NoSQL database?",
-            options: ["MySQL", "PostgreSQL", "MongoDB", "Oracle"],
-            answer: 3
-        },
-        {
-            question: "Which protocol is used for secure communication on the web?",
-            options: ["FTP", "SSH", "HTTP", "HTTPS"],
-            answer: 4
-        },
-        {
-            question: " How much traffic do come from mobile devices only ?",
-            options: ["More than 70%" , "More than 20%" , "More than 55%" , "More than 43%"],
-            answer: 3
-        }
-    ];
+   const questions = [
+  {
+    question: "Which programming language is used to build Flutter apps?",
+    options: ["Swift", "Dart", "Kotlin", "Java"],
+    answer: 1 // Dart
+  },
+  {
+    question: "Which of the following platforms is NOT directly supported by Flutter?",
+    options: ["Android", "iOS", "Web", "MainFrame"],
+    answer: 3 // MainFrame
+  },
+  {
+    question: "What does “Cross-Platform Compatibility” mean in Flutter?",
+    options: [
+      "Apps can run on multiple platforms with the same code",
+      "Apps require different code for each platform",
+      "Apps only run on Android and iOS",
+      "Apps cannot run on desktop platforms"
+    ],
+    answer: 0 // Multiple platforms with same code
+  },
+  {
+    question: "Name two types of applications: Mobile Apps and _____ ",
+    options: ["Games", "Website", "Desktop Apps", "Wallpapers"],
+    answer: 2 // Desktop Apps
+  },
+  {
+    question: "What is 'Hot Reload' in Flutter?",
+    options: [
+      "A feature to auto-update UI without restarting the app",
+      "A tool for app publishing",
+      "A way to compile Dart into Java",
+      "A method to increase battery usage"
+    ],
+    answer: 0 // Hot Reload feature
+  },
+  {
+    question: "Which language is used to make web pages interactive?",
+    options: ["CSS", "HTML", "JavaScript", "PHP"],
+    answer: 2 // JavaScript
+  },
+  {
+    question: "What is the purpose of a database in web development?",
+    options: [
+      "To design web pages",
+      "To store and manage data",
+      "To create animations",
+      "To write CSS"
+    ],
+    answer: 1 // Store and manage data
+  },
+  {
+    question: "Which of the following is a NoSQL database?",
+    options: ["MySQL", "PostgreSQL", "MongoDB", "Oracle"],
+    answer: 2 // MongoDB
+  },
+  {
+    question: "Which protocol is used for secure communication on the web?",
+    options: ["FTP", "SSH", "HTTP", "HTTPS"],
+    answer: 3 // HTTPS
+  },
+  {
+    question: "How much traffic comes from mobile devices only?",
+    options: ["More than 70%", "More than 20%", "More than 55%", "More than 43%"],
+    answer: 2 // More than 55%
+  }
+];
 
 
     // If you have the original questions array, paste it here exactly as before.
