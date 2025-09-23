@@ -39,55 +39,55 @@ document.addEventListener('DOMContentLoaded', () => {
     // Quiz questions
     const questions = [
         {
-            question: "In the context of a college club, what do the pigs stealing eggs represent?",
-            options: ["Technical challenges", "Event organizers", "Guest speakers", "Hackathon prizes"],
-            answer: 0
+            question: "Which programming language is used to build Flutter apps?",
+            options: ["Swift", "Dart", "Kotlin", "Java"],
+            answer: 2
         },
         {
-            question: "What’s the most important circuit every engineer learns?",
-            options: ["RLC Circuit", "Short Circuit", "Placement Circuit", "Tea-Canteen Circuit"],
-            answer: 3
+            question: "Which of the following platforms is NOT directly supported by Flutter?",
+            options: ["Android", "iOS", "Web", "MainFrame"],
+            answer: 4
         },
         {
-            question: "What is the main goal of both Angry Birds and college clubs like GDG?",
-            options: ["Destroying obstacles to achieve success", "Skipping exams", "Collecting coins", "Finding shortcuts"],
-            answer: 0
+            question: "What does “Cross-Platform Compatibility” mean in Flutter?",
+            options: ["Apps can run on multiple platforms with the same code"," Apps require different code for each platform"," Apps only run on Android and iOS", " Apps cannot run on desktop platforms"],
+            answer: 1
         },
         
         {
-            question: "What is an engineer’s real superpower?",
-            options: ["Debugging at 3 AM", "Copy-pasting from Stack Overflow", "Explaining memes as research", "Sleeping with open eyes in class"],
-            answer: 1
-        },
-        {
-            question: "Why do engineering students love group projects?",
-            options: ["Because teamwork is fun", "Because one person does all the work", "Because it builds leadership", "Because it means free attendance"],
-            answer: 1
-        },
-        {
-            question: "In Angry Birds, team effort is key. In GDG clubs, what represents the team effort?",
-            options: ["Student volunteers", "Bird powers", "Coding mentors", "Campus audience"],
-            answer: 0
-        },
-        {
-            question: "What does CGPA actually stand for in engineering sarcasm?",
-            options: ["Cumulative Grade Point Average", "Can’t Get Proper Attendance", "Coding Games Play Always", "Continuous Group Project Anxiety"],
-            answer: 1
-        },
-        {
-            question: "If the birds represent students, what do the slingshot launches symbolize in a GDG event?",
-            options: ["New opportunities and learning", "Breaking rules", "Skipping classes", "Event decorations"],
-            answer: 0
-        },
-        {
-            question: "Why do engineers carry laptops everywhere?",
-            options: ["To look professional", "To actually code", "To hide that they’re watching anime", "Because WiFi is their oxygen"],
+            question: "Name two types of applications: Mobile Apps and _____ ",
+            options: ["Games", "Website", "Desktop Apps", "Wallpapers"],
             answer: 3
         },
         {
-            question: "Which formula do engineers apply the most in real life?",
-            options: ["Ohm’s Law", "Newton’s Laws", "Ctrl + C, Ctrl + V", "Schrodinger’s Equation"],
+            question: "What is 'Hot Reload' in Flutter?",
+            options: ["A feature to auto-update UI without restarting the app", "A tool for app publishing", "A way to compile Dart into Java", "A method to increase battery usage"],
+            answer: 1
+        },
+        {
+            question: "Which language is used to make web pages interactive?",
+            options: ["CSS", "HTML", "JavaScript", "PHP"],
             answer: 2
+        },
+        {
+            question: "What is the purpose of a database in web development?",
+            options: [" To design web pages", "To store and manage data", " To create animations", " To write CSS"],
+            answer: 2
+        },
+        {
+            question: "Which of the following is a NoSQL database?",
+            options: ["MySQL", "PostgreSQL", "MongoDB", "Oracle"],
+            answer: 3
+        },
+        {
+            question: "Which protocol is used for secure communication on the web?",
+            options: ["FTP", "SSH", "HTTP", "HTTPS"],
+            answer: 4
+        },
+        {
+            question: " How much traffic do come from mobile devices only ?",
+            options: ["More than 70%" , "More than 20%" , "More than 55%" , "More than 43%"],
+            answer: 3
         }
     ];
 
